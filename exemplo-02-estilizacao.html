@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>estilizacao</title>
+    <link rel="stylesheet" href="assets/css/exemplo-02-estilizacao.css">
+</head>
+<body>
+
+    <button onclick="alternarVisibilidadeBotao()" id="botao-alternar-visibilidade" >apresentar caixa</button>
+    <button onclick="definirCorVermelho()">Cor Vermelha</button>
+    <button onclick="definirCorAzul()">Cor azul</button>
+    <button onclick="redefinirCor()">Redefinir Cor</button>
+    <button onclick="ArcoIris()">Arco iris</button>
+
+    <div id="caixa-01>">Caixa 01</div>
+
+    <h3>Dados da pessoa</h3>
+    <div>
+        <label for="campo=nome"></label>
+        <input type="text" id="campo-nome">
+    </div>
+    <div>
+        <input type="radio" id="campo-tipo-pf" name="campo-tipo" value="pf"
+        onchange="apresentarCampoPessoaFisica()">
+        <label for="campo-tipo-pf">PF</label>
+        <input type="radio" id="campo-tipo-pj" name="campo-tipo" value="pj"
+        onchange="apresentarCampoPessoaJuridica()">
+        <label for="campo-tipo-pj">PJ</label>
+    </div>
+
+    <!--
+    visibility: hidden; // oculta o elemento visualmente, mas ele ainda ocupa espaço no layout da pagina.
+    display: none; // remove completamente o elemento layout, como se ele nao existisse.
+    -->
+    
+    <div id="campos-pf" class="hidden">
+        <label for="campos-cpf">CPF</label>
+        <input type="text" id="campo-cpf">
+    </div>
+
+    <div id="campos-pj" class="hidden">
+        <label for="campos-cnpj">CNPJ</label>
+        <input type="text" id="campo-cnpj">
+    </div>
+    
+    <script src="assets/js/exemplo-02-estilizacao.js"></script>
+
+</body>
+</html>
