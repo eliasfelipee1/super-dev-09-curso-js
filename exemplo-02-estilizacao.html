@@ -8,8 +8,8 @@
 </head>
 <body>
 
-    <button onclick="alternarVisibilidadeBotao()" id="botao-alternar-visibilidade" >apresentar caixa</button>
-    <button onclick="definirCorVermelho()">Cor Vermelha</button>
+    <button onclick="alternarVisibilidadeBotao()" id="botao-alternar-visibilidade">apresentar caixa</button>
+    <button onclick="definirCorVermelha()">Cor Vermelha</button>
     <button onclick="definirCorAzul()">Cor azul</button>
     <button onclick="redefinirCor()">Redefinir Cor</button>
     <button onclick="ArcoIris()">Arco iris</button>
@@ -34,7 +34,7 @@
     visibility: hidden; // oculta o elemento visualmente, mas ele ainda ocupa espaço no layout da pagina.
     display: none; // remove completamente o elemento layout, como se ele nao existisse.
     -->
-    
+
     <div id="campos-pf" class="hidden">
         <label for="campos-cpf">CPF</label>
         <input type="text" id="campo-cpf">
@@ -44,6 +44,13 @@
         <label for="campos-cnpj">CNPJ</label>
         <input type="text" id="campo-cnpj">
     </div>
+
+    <h3>digitar para apresentar gif</h3>
+    </div>
+        <label for="campos-pesquisa">Pesquisa</label>
+        <input type="text" id="campo-pesquisa" onkeyup="alterarImagem(event)">
+    </div>
+    <div class="imagem"></div>
     
     <script src="assets/js/exemplo-02-estilizacao.js"></script>
 

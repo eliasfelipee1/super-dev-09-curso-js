@@ -46,3 +46,11 @@
     color: #000000;
 
 }
+
+.hidden{
+    display: none;
+}
+
+.imagem{
+    height:  100px;
+}

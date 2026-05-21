@@ -77,3 +77,28 @@ function apresentarCamposPessoaJuridica(){
     const divCamposPf = document.getElementById("campos-pf");
     divCamposPf.classList.add("hidden");
 }
+
+function alterarImagem(evento){
+    if(evento.key === "enter"){
+    }
+}
+
+const imagemAbsoluteCinema = "https://lazersemfronteiras.com.br/wp-content/uploads/2025/09/Absolute-cinema-o-que-e-e-por-que-esse-meme-viralizou.jpg";
+const imagemSapo = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwqd6Yl7zik3g7UBl3_gM_OYK3IKpGL2fJeQ&s";
+const imagemDragonBall = "https://ovicio.com.br/wp-content/uploads/dragon-ball-z-vegeta-9000-238679.png";
+
+function alterarImagem(evento) {
+    if(evento.key === "enter") {
+        const imagem = document.getElementsByClassName("imagem")[0]
+        const campoPesquisa = document.getElementById("campo-pesquisa");
+        const Pesquisa = campoPesquisa.value;
+        if(pesquisa === "dragon ball") {
+            imagem.style.background = `url('${imagemDragonBall})')`;
+        } else if (Pesquisa === "absulute cinema") {
+            imagem.style.background = `url('${imagemAbsoluteCinema})')`;
+        } else {
+            imagem.style.background = `url('${imagemSapo})')`;
+        }
+    }
+
+}
