@@ -78,7 +78,7 @@ function consultarEmpresaPorId() {
 
     const textarea = document.getElementById("empresas");
 
-    // limpar o textoarea
+    // limpar o textarea
     textarea.value = "";
 
     fetch(url)
