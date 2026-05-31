@@ -95,3 +95,4 @@ Multiplicador do Plano: ${multiplicadorPlano}
 Total: R$ ${total.toFixed(2)}
 `;
 }
+
